@@ -1,6 +1,8 @@
 # Task 3: Installing WSL/Ubuntu, Python and VS Code on your PC Computer
 
-In this class, we will be teaching you Python programming from the ground up! The best way to learn Python is by practicing as often as you can. By installing python directly on your laptop, you can practice anywhere and anytime you like, with or without an internet connection.
+In this class, we will be teaching you Python programming from the ground up! The best way to learn Python is by practicing as often as you can. By installing Python directly on your laptop, you can practice anywhere and anytime you like, with or without an internet connection.
+
+Note that you have many options to code! I have shown you how to use the HPC and the VS Code GUI, and Replit. Installing on your laptop is another option, but is not required. You may find it easier to just use the online resources for this class.
 
 I have added detailed instructions below, but here are a few resources for extra details on how this works on your PC:
 * [Developing in WSL in VSCode](https://code.visualstudio.com/docs/remote/wsl)
@@ -114,7 +116,7 @@ We need to tell VS code which version of Python to use, and point to the latest 
 
 ![5vs](./images/5_vscode_select_python.png "Select Python Interpreter from the command pallete VS Code")
 
-## Cloning a copy of your Class GitHub repository (be434-spring-2023) onto your laptop and using in VS Code
+## Cloning a copy of your Class GitHub repository (be434-Spring2025) onto your laptop and using in VS Code
 
 You should have already created a copy of the class GitHub repository under your own web-based GitHub account. If not, go back to setup2_github to create a GitHub account and make a copy of the class GitHub repository. 
 
@@ -134,7 +136,7 @@ In this section, we will be cloning (or copying) your repository from your web-b
 
 ![4vsg](./images/4_vscode_git_authorize.png "Authorize VS Code to use GitHub")
 
-* Select your be434-spring-2023 repository to clone it to your computer. It should open in VS code once you do this.
+* Select your be434-Spring2025 repository to clone it to your computer. It should open in VS code once you do this.
 
 ![5vsg](./images/5_vscode_git_byname.png "Search for your class repository by name GitHub")
 
@@ -146,7 +148,7 @@ You can also use the [GitHub Desktop application](https://desktop.github.com/) t
 
 ## Installing Python modules for running tests on your code
 
-Now that you have downloaded the class repository, you can install all of the Python modules we will use in the class to test you code (found in the be434-Spring2024/docs/requirements.txt file). Python modules (or code packages) are written by people in Python community and can be used by anyone to perform certain functions in Python. We are going to use several Python modules in this class to test your code and make sure it meets community standards. Open a terminal in VS Code (Terminal -> New Terminal) which should take you to the be434-Spring2024 folder (that you opened when you cloned the repository above), then navigate to the docs folder like so:
+Now that you have downloaded the class repository, you can install all of the Python modules we will use in the class to test you code (found in the be434-Spring2025/docs/requirements.txt file). Python modules (or code packages) are written by people in Python community and can be used by anyone to perform certain functions in Python. We are going to use several Python modules in this class to test your code and make sure it meets community standards. Open a terminal in VS Code (Terminal -> New Terminal) which should take you to the be434-Spring2024 folder (that you opened when you cloned the repository above), then navigate to the docs folder like so:
 
 ```
 cd ./docs

@@ -1,10 +1,12 @@
 # Getting started on the HPC
 
+Not enough compute time on replit? You can use the HPC!
+
+Because you can easily run through all of your hours in replit, I am offering another option for you to use VScode on the campus HPC. Note that VScode also allows you to view and try out the campus 
+
 ## What is the HPC?
 
 HPC is an acronym for "high-performance computing," and it generally means using a cluster of computers. Students have access to several clusters (puma, ocelote, elgato) at the University of Arizona. In our case, we are going to use ocelote, our training cluster.
-
-Because you can easily run through all of your hours in replit, I am offering another option for you to use VScode on the campus HPC. Note that VScode also allows you to view and try out the campus 
 
 ## Steps for HPC access
 
@@ -30,5 +32,11 @@ You can write Python code using the VSCode GUI on the HPC. To access VScode use 
 
 Next, you will need to clone your GitHub repository for the class on the HPC in your home directory. To do this follow these steps:
 
-1. In VSCode
+1. In the VSCode app, select Terminal -> new terminal from the top menu bar.
+2. In the terminal window type the following commands:
+Be sure to change the link to your repository
 
+cd
+git clone https://github.com/[YOUR GITHUB ID]/be434-Spring2025.git
+
+That's it! You should now have a copy of the code on the HPC. Note that the HPC or replit can be your working code repository. They will both write back to your main GitHub code repository when you "commit" and "push" your changes.
