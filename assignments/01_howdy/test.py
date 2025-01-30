@@ -32,6 +32,7 @@ def test_defaults():
     assert out.strip() == 'Howdy, Stranger.'
 
 
+
 # --------------------------------------------------
 def test_greeting():
     """ Accepts greeting """
