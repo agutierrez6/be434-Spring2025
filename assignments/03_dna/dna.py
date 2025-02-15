@@ -2,7 +2,7 @@
 """
 Author : Abraham Gutierrez <agutierrez6@arizona.edu>
 Date   : 2025-02-15
-Purpose: Accept a sequence of DNA as a single positional argument to count tetranucleotide frequency
+Purpose: Count tetranuclotide frequency in a DNA sequence
 """
 
 import argparse
@@ -16,8 +16,7 @@ def get_args():
         description='Tetranucleotide frequency',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
-    parser.add_argument('positional',
-                        metavar='DNA',
+    parser.add_argument('DNA',
                         help='Input DNA sequence')
 
 
@@ -29,14 +28,9 @@ def main():
     """Make a jazz noise here"""
 
     args = get_args()
-    dna = args.positional
-    dna = dna.upper()
-    dna_count = {'A': 0, 'C': 0, 'G': 0, 'T': 0}
-    dna = dna.replace('T', 'U')
-    for base in dna:
-        dna_count[base] += 1
-    print(dna_count)
-    print(f'DNA: {dna}')
+    dna = args.DNA.upper()
+    counts = [dna.count(base) for base in ['A', 'C', 'G', 'T']]
+    print(''.join(map(str, counts)))
 
 
 
