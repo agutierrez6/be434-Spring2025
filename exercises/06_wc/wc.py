@@ -2,7 +2,7 @@
 """
 Author : Ken Youens-Clark <kyclark@gmail.com>
 Date   : 2021-10-04
-Purpose: Rock the Casbah
+Purpose: Word count
 """
 
 import argparse
@@ -15,11 +15,11 @@ def get_args():
     """Get command-line arguments"""
 
     parser = argparse.ArgumentParser(
-        description='Rock the Casbah',
+        description='Word count',
         formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     parser.add_argument('files',
-                        help='A readable file',
+                        help='Input files',
                         metavar='FILE',
                         type=argparse.FileType('rt'),
                         default=[sys.stdin],
