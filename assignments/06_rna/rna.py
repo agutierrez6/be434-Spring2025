@@ -47,9 +47,7 @@ def main():
         try:
             os.makedirs(args.out_dir, exist_ok=True)
         except OSError as e:
-            sys.stderr.write(
-                f"Error creating output directory: {e}\n"
-            )
+            sys.stderr.write(f"Error creating output directory: {e}\n")
             sys.exit(1)
 
     processed_sequences = 0
@@ -63,9 +61,7 @@ def main():
 
         try:
             with open(file, "r", encoding="utf-8") as f:
-                dna_seq_list = [
-                    line.strip() for line in f.readlines() if line.strip()
-                    ]
+                dna_seq_list = [line.strip() for line in f.readlines() if line.strip()]
 
             if not dna_seq_list:
                 sys.stderr.write(f"Warning: File '{file}' is empty.\n")
@@ -91,7 +87,7 @@ def main():
     file_word = "file" if processed_files == 1 else "files"
 
     print(
-        f'Done, wrote {processed_sequences} {sequence_word} in'
+        f"Done, wrote {processed_sequences} {sequence_word} in"
         f' {processed_files} {file_word} to directory "{args.out_dir}".'
     )
 
